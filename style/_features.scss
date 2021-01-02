@@ -1,0 +1,101 @@
+.featurescontainer{
+    background: #282827;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.features{
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .wave{
+        img{        position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: auto;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    h2{
+        color: white;
+    }
+    .cards{
+        display: flex;
+    }
+    .card:hover{
+        transform: scale(1.01);
+        box-shadow: 20px 21px 11px -1px rgba(0,0,0,0.75);    
+    }
+    .card{
+        background:white;
+        margin: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 2rem ;
+        overflow: hidden;
+        width: 40rem;
+        height: 50rem;
+        transition: 0.2s ease !important;
+        h4{
+            padding: 2rem;
+        }
+        p{
+            padding: 1rem;
+        }
+
+    }
+
+}
+.card3{
+    img{
+        margin-top: 4rem;
+    }
+    h4{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin: 2rem 0rem;
+            font-size: 3rem ;
+        }
+    }
+    .cards{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        .card{
+            width: 20rem;
+            height: 30rem;
+            margin: 3rem 0rem;
+            transition: 0.2s ease !important;
+        }
+        .card:hover{
+            transform: scale(1.01);
+            box-shadow: 20px 21px 11px -1px rgba(0,0,0,0.75);    
+        }
+        .card3{
+            img{
+                margin-top: 2rem;
+            }
+            h4{
+                margin-top: 1.5rem;
+            }
+        }
+        h4{
+            font-size: 1.5rem!important;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+}
